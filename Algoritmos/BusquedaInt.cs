@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * autor:fernando
+ * fecha:202306052353
+ * */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +17,14 @@ namespace Algoritmos
         //v[]: vector de valores 
         //n: el tamaño del vector menos 1
         //retorno: la posición del valor buscado. Sino lo encontró devuelve -1
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="v"></param>
+        /// <param name="n"></param>
+        /// <param name="clave"></param>
+        /// <returns></returns>
         static public int BusquedaBinaria(int[] v, int n, int clave)
         {
             int inf = 0;//corregido!

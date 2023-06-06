@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * autor:fernando
+ * fecha:202306052353
+ * */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +13,16 @@ namespace Algoritmos
 {
     public class OrdenamientoRecursivoInt
     {
-        static public void QuickSort(int[] a,
-                 int inicio, int fin)
+       
+        static public void QuickSort(int[] a, int inicio, int fin)
         {
-            //partición
+            OrdenamientoInterativoInt.cntMax++;
+
+            #region partición
             int p = a[inicio];
             int m = inicio + 1;
             int n = fin;
-            int aux = 0;
+            int aux;
 
             while (m <= n)//hasta que se crucen
             {
@@ -31,11 +38,11 @@ namespace Algoritmos
             }
             a[inicio] = a[n];
             a[n] = p;
-            //fin partición
+            #endregion
 
-            if (inicio <= n - 1)
+            if (inicio < n-1 )
                 QuickSort(a, inicio, n - 1);
-            if (n + 1 <= fin)
+            if (n+1  < fin)
                 QuickSort(a, n + 1, fin);
         }
 
@@ -86,7 +93,5 @@ namespace Algoritmos
 
             return resultado;
         }
-
-
     }
 }
