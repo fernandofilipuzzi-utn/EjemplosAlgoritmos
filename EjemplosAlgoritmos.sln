@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSortValores", "QuickSortValores\QuickSortValores.csproj", "{DD2AF8F6-D7C4-4836-9D2B-27E0E6A8F16E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSortObjetos", "QuickSortObjetos\QuickSortObjetos.csproj", "{9CC40215-133E-4E60-BEA1-E59B4A3E7059}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSortValores", "MergeSortValores\MergeSortValores.csproj", "{8A79362D-2415-4EC1-9EE4-30CCA8DC2E9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarySearchValores", "BinarySearchValores\BinarySearchValores.csproj", "{0270C1FC-D74F-4BA7-800A-6DD4D62B040C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSortValoresIterativo", "QuickSortValoresIterativo\QuickSortValoresIterativo.csproj", "{BEBCB71F-E004-40FC-A345-D44A000A33AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmos", "Algoritmos\Algoritmos.csproj", "{04EC3B37-3DEB-43EA-8F50-A24C1E2FFD6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD2AF8F6-D7C4-4836-9D2B-27E0E6A8F16E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD2AF8F6-D7C4-4836-9D2B-27E0E6A8F16E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD2AF8F6-D7C4-4836-9D2B-27E0E6A8F16E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD2AF8F6-D7C4-4836-9D2B-27E0E6A8F16E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC40215-133E-4E60-BEA1-E59B4A3E7059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC40215-133E-4E60-BEA1-E59B4A3E7059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC40215-133E-4E60-BEA1-E59B4A3E7059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC40215-133E-4E60-BEA1-E59B4A3E7059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A79362D-2415-4EC1-9EE4-30CCA8DC2E9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A79362D-2415-4EC1-9EE4-30CCA8DC2E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A79362D-2415-4EC1-9EE4-30CCA8DC2E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A79362D-2415-4EC1-9EE4-30CCA8DC2E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0270C1FC-D74F-4BA7-800A-6DD4D62B040C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0270C1FC-D74F-4BA7-800A-6DD4D62B040C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0270C1FC-D74F-4BA7-800A-6DD4D62B040C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0270C1FC-D74F-4BA7-800A-6DD4D62B040C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEBCB71F-E004-40FC-A345-D44A000A33AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEBCB71F-E004-40FC-A345-D44A000A33AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEBCB71F-E004-40FC-A345-D44A000A33AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEBCB71F-E004-40FC-A345-D44A000A33AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04EC3B37-3DEB-43EA-8F50-A24C1E2FFD6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04EC3B37-3DEB-43EA-8F50-A24C1E2FFD6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04EC3B37-3DEB-43EA-8F50-A24C1E2FFD6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04EC3B37-3DEB-43EA-8F50-A24C1E2FFD6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FCFAE36-B05B-4D0E-8ED0-EA217F1FA3FA}
+	EndGlobalSection
+EndGlobal
