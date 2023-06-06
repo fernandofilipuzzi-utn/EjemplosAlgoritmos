@@ -13,7 +13,6 @@ namespace Algoritmos
 {
     public class OrdenamientoRecursivoInt
     {
-       
         static public void QuickSort(int[] a, int inicio, int fin)
         {
             OrdenamientoInterativoInt.cntMax++;

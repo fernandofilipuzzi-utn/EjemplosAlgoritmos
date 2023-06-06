@@ -21,7 +21,7 @@ namespace QuickSortValoresIterativo
         static void Main(string[] args)
         {
             #region inicialización y generación de valores
-            int[] valores = new int[1000000];
+            int[] valores = new int[1000];
             for (int n = 0; n < valores.Length; n++)
                 valores[n] = azar.Next(0, 10000 * valores.Length);
             #endregion
@@ -34,8 +34,7 @@ namespace QuickSortValoresIterativo
             OrdenamientoInterativoInt.cntMax = 0;
             #endregion
 
-            //OrdenamientoInterativoInt.QuickSort(valores, 0, valores.Length - 1);
-            OrdenamientoRecursivoInt.QuickSort(valores, 0, valores.Length - 1);
+            OrdenamientoInterativoInt.QuickSort(valores, 0, valores.Length - 1);
            
             #region impresión valores ordenados
             Console.WriteLine("Valores ordenados");
@@ -45,7 +44,7 @@ namespace QuickSortValoresIterativo
             Console.WriteLine("---------------------");
             #endregion
 
-            Console.WriteLine("Maximo crecimeinto de la pila:{0}", OrdenamientoInterativoInt.cntMax);
+            Console.WriteLine("Llamadas:{0}", OrdenamientoInterativoInt.cntMax);
 
             Console.ReadKey();
         }

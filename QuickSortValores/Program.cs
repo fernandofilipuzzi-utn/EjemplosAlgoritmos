@@ -26,7 +26,7 @@ namespace QuickSortEjemplo
             Console.Write("\n");
             #endregion
 
-            OrdenamientoRecursivoInt.QuickSortMejorado(lista, 0, lista.Length -1);
+            OrdenamientoRecursivoInt.QuickSort(lista, 0, lista.Length -1);
 
             #region imprimiendo resultados
             Console.WriteLine("Lista ordenada");

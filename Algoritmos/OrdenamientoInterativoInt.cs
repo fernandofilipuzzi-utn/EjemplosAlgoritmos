@@ -13,7 +13,6 @@ namespace Algoritmos
 {
     public class OrdenamientoInterativoInt
     {
-        /*interrogantes: que tanto crece la pila*/
         static public int cntMax = 0;
 
         static public void QuickSort(int[] a, int l, int r)
@@ -21,11 +20,11 @@ namespace Algoritmos
             int[] stack = new int[a.Length];
             int cnt = 0;
 
-            //push - salvo los argumentos del quick
+            #region push - salvo los argumentos del quick
             stack[cnt++] = l;
             stack[cnt++] = r;
+            #endregion
 
-            //
             while (cnt > 0)
             {
                 #region pop - los datos de la cabecera 
@@ -33,7 +32,7 @@ namespace Algoritmos
                 l = stack[--cnt];//pop=saca el primero
                 #endregion
 
-                #region este bloque lo que hace el quick tradicional 
+                #region este bloque hace lo que el quick tradicional 
                 #region recalculando
                 int p = a[l];
                 int m = l + 1;
@@ -74,7 +73,7 @@ namespace Algoritmos
                 }
                 #endregion
 
-                //busco el máximo crecimiento del cnt
+                //llamadas
                 if (cntMax < cnt) cntMax = cnt;
             }
         }
