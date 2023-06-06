@@ -42,10 +42,9 @@ namespace ConsoleApp1
 
         #endregion
 
-
         static void Main(string[] args)
         {
-            //valores de prueba
+            #region valores de prueba
             Persona[] lista = new Persona[]{
              new Persona(20100001, "juan"),
              new Persona(20100003, "martin"),
@@ -56,16 +55,18 @@ namespace ConsoleApp1
             for (int n = 0; n < lista.Length; n++)
                 Console.WriteLine("{0} ", lista[n].Ver());
             Console.Write("\n");
+            #endregion
 
             QuickSort(lista, 0, lista.Length - 1);
 
+            #region impresión valores ordenados
             Console.WriteLine("Lista ordenada");
             for (int n = 0; n < lista.Length; n++)
                 Console.WriteLine("{0} ", lista[n].Ver());
             Console.Write("\n");
+            #endregion
 
             Console.ReadKey();
         }
-
     }
 }
