@@ -13,6 +13,7 @@ namespace WindowsFormConHilos
     public partial class FormPrincipal : Form
     {
         string a = "", b = "", c = "", d = "", e = "";
+        long m, n, o, p, q;
         bool cancelar = true;
 
         public FormPrincipal()
@@ -53,38 +54,38 @@ namespace WindowsFormConHilos
 
         public void DoWork1()
         {
-            for (long i = 0; i < 500000000 && cancelar == false; i++)
+            for ( m = 0; m < 500000000 && cancelar == false; m++)
             {
-                a = "Hilo secundario 1: " + i;
+                a = "Hilo secundario 1: " + m;
                 
             }
         }
         public void DoWork2()
         {
-            for (long i = 0; i < 500000000 && cancelar == false; i++)
+            for (n = 0; n < 500000000 && cancelar == false; n++)
             {
-                b = "Hilo secundario 2: " + i;
+                b = "Hilo secundario 2: " + n;
             }
         }
         public void DoWork3()
         {
-            for (long i = 0; i < 500000000 && cancelar == false; i++)
+            for (o = 0; o < 500000000 && cancelar == false;o++)
             {
-                c = "Hilo secundario 3: " + i;
+                c = "Hilo secundario 3: " + o;
             }
         }
         public void DoWork4()
         {
-            for (long i = 0; i < 500000000 && cancelar == false; i++)
+            for (p = 0; p < 500000000 && cancelar == false;p++)
             {
-                d = "Hilo secundario 4: " + i;
+                d = "Hilo secundario 4: " + p;
             }
         }
         public void DoWork5()
         {
-            for (long i = 0; i < 500000000 && cancelar == false; i++)
+            for (q = 0; q < 500000000 && cancelar == false; q++)
             {
-                e = "Hilo secundario 5: " + i;
+                e = "Hilo secundario 5: " + q;
             }
         }
 
@@ -98,8 +99,25 @@ namespace WindowsFormConHilos
             listBox1.Items.Add("");
             listBox1.Items.Add("");
 
+            progressBar1.Maximum = 100;
+            progressBar2.Maximum = 100;
+            progressBar3.Maximum = 100;
+            progressBar4.Maximum = 100;
+            progressBar5.Maximum = 100;
+            progressBar1.Value = 0;
+            progressBar2.Value = 0;
+            progressBar3.Value = 0;
+            progressBar4.Value = 0;
+            progressBar5.Value = 0;
+
             while ( cancelar == false)
             {
+                progressBar1.Value = (int)(100.0*m/ 500000000);
+                progressBar2.Value = (int)(n / 500000000.0 * 100);
+                progressBar3.Value = (int)(o / 500000000.0 * 100);
+                progressBar4.Value = (int)(p / 500000000.0 * 100);
+                progressBar5.Value = (int)(q / 500000000.0 * 100);
+
                 listBox1.Items[0] = a;
                 listBox1.Items[1] = b;
                 listBox1.Items[2] = c;
@@ -107,6 +125,7 @@ namespace WindowsFormConHilos
                 listBox1.Items[4] = e;
 
                 await Task.Delay(1000);
+                this.Update();
             }
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
