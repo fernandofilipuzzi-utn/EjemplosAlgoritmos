@@ -44,12 +44,20 @@ namespace WindowsFormConHilos
                 button1.Text = "Parar";
 
             }
+            /*
             Task.Run(new Action(DoWork1));
             Task.Run(new Action(DoWork2));
             Task.Run(new Action(DoWork3));
             Task.Run(new Action(DoWork4));
             Task.Run(new Action(DoWork5));
             Task.Run(new Action(DoWork6));
+            */
+            Task.Run(DoWork1);
+            Task.Run(DoWork2);
+            Task.Run(DoWork3);
+            Task.Run(DoWork4);
+            Task.Run(DoWork5);
+            Task.Run(DoWork6);
         }
 
         public void DoWork1()
