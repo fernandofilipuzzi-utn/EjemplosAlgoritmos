@@ -112,11 +112,11 @@ namespace WindowsFormConHilos
 
             while ( cancelar == false)
             {
-                progressBar1.Value = (int)(100.0*m/ 500000000);
-                progressBar2.Value = (int)(n / 500000000.0 * 100);
-                progressBar3.Value = (int)(o / 500000000.0 * 100);
-                progressBar4.Value = (int)(p / 500000000.0 * 100);
-                progressBar5.Value = (int)(q / 500000000.0 * 100);
+                progressBar1.Value = (int)(100.0 * m / 500000000);
+                progressBar2.Value = (int)(100.0 * n / 500000000);
+                progressBar3.Value = (int)(100.0 * o / 500000000);
+                progressBar4.Value = (int)(100.0 * p / 500000000);
+                progressBar5.Value = (int)(100.0 * q / 500000000);
 
                 listBox1.Items[0] = a;
                 listBox1.Items[1] = b;
