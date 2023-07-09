@@ -53,36 +53,8 @@ namespace Algoritmos
                 int centro = (inicio + fin) / 2;
                 int[] izq = MergeSort(lista, inicio, centro);
                 int[] der = MergeSort(lista, centro + 1, fin);
-
-                //merge            
-                //resultado = new int[inicio+fin+1];
-                resultado = new int[izq.Length + der.Length];//corregido!
-
-                int n = 0, i = 0, d = 0;
-                while (i < izq.Length || d < der.Length)
-                {
-                    if (d >= der.Length)
-                    {
-                        resultado[n] = izq[i];
-                        i++;
-                    }
-                    else if (i >= izq.Length)
-                    {
-                        resultado[n] = der[d];
-                        d++;
-                    }
-                    else if (izq[i] < der[d])
-                    {
-                        resultado[n] = izq[i];
-                        i++;
-                    }
-                    else
-                    {
-                        resultado[n] = der[d];
-                        d++;
-                    }
-                    n++;
-                }
+   
+                resultado = Merge(izq, der);
             }
             else
             {
@@ -90,6 +62,39 @@ namespace Algoritmos
                 resultado[0] = lista[inicio];
             }
 
+            return resultado;
+        }
+
+        static public int[] Merge(int[] izq, int[] der)
+        {
+            int[] resultado = null;
+            resultado = new int[izq.Length + der.Length];
+
+            int n = 0, i = 0, d = 0;
+            while (i < izq.Length || d < der.Length)
+            {
+                if (d >= der.Length)
+                {
+                    resultado[n] = izq[i];
+                    i++;
+                }
+                else if (i >= izq.Length)
+                {
+                    resultado[n] = der[d];
+                    d++;
+                }
+                else if (izq[i] < der[d])
+                {
+                    resultado[n] = izq[i];
+                    i++;
+                }
+                else
+                {
+                    resultado[n] = der[d];
+                    d++;
+                }
+                n++;
+            }
             return resultado;
         }
     }
