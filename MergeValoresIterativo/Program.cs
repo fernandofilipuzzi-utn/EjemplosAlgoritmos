@@ -45,13 +45,22 @@ namespace MergeValoresIterativo
 
         static int[] copiar(int [] lista, int comienzo, int cant)
         {
-            int[] resultado = new int[cant];
-            for (int n = 0; n < cant && comienzo + n<lista.Length; n++)
-                resultado[n] = lista[comienzo + n];
+            int[] resultado = null;
+            
+            int longEfectiva = lista.Length - comienzo;
+            if(longEfectiva>=0 && longEfectiva < cant) cant = longEfectiva;
+            
+            resultado = new int[cant];
+
+            for (int n = 0; n < cant; n++) resultado[n] = lista[comienzo + n];
+
             return resultado;
         }
         static int[] copiar(int[] desde, int comienzoDesde, int cantDesde, int[] a, int comienzoA)
         {
+            int longEfectiva = a.Length - comienzoA;
+            if (longEfectiva >= 0 && longEfectiva < cantDesde) cantDesde = longEfectiva;
+
             for (int n = 0; n < cantDesde && n + comienzoA< a.Length; n++)
             {
                 a[n+comienzoA] = desde[n+comienzoDesde];
@@ -95,8 +104,7 @@ namespace MergeValoresIterativo
         static void Main(string[] args)
         {
             //valores de prueba
-            //tiene un error para longitud par
-            int[] lista = new[] { 3, 7, 9, 8, 10, 11, 2 , 7};
+            int[] lista = new[] { 3, 7, 9, 8, 10, 11, 2};
 
             Console.WriteLine("Lista desordenada");
             for (int n = 0; n < lista.Length; n++)
